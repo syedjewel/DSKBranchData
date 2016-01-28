@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jewel.jewana.dskbranchreport.BranchDataAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:text="Branch Add Data"
+            android:padding="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="ID: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/IdDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Area Name: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/areaNameDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Branch Name: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/branchNameDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:text="MonthOfReport: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/monthOfReportDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:text="No_Of_Center: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/no_of_centerDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:text="No_Of_Staff: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/no_of_staffDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:text="Closing_Member: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/closing_memberDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Closing_Savings_Outs: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/closing_savings_outsDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Disburse_Loan(Month) "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/this_m_disburse_loanDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="This_Year_Disburse:"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/this_year_disbursementDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="End_Outstanding_Loan:"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/end_Outstanding_LoanDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="DisburseLoanee(Month):"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/this_m_total_disburse_loaneeDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Loanee: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/end_total_outstanding_loaneeDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Due Loan: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <EditText
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:id="@+id/new_due_loanDetailsTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Overdue Loan: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/overdue_loanDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Overdue_loanee: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/overdue_loaneeDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="End Due Loan(P): "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/end_due_loanDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="RecoveryDue Loan: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/recoverydue_loanDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="End_Due_Loan(P+S): "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/end_due_loanscDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="End Due Loanee: "
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/end_due_loaneeDetailsTV"
+                android:layout_width="0dp"
+                android:textStyle="normal"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:onClick="onClickSave"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="TEST"
+            android:onClick="onClickTest"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

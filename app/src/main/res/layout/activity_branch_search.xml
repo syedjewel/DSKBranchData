@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:background="@android:color/white"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.jewel.jewana.dskbranchreport.BranchSearchActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:paddingTop="10dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:text="Search"
+        android:layout_height="wrap_content" />
+    <!--<TextView
+        android:text="Search:"
+        android:layout_width="0dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"/>-->
+    <EditText
+        android:paddingTop="15dp"
+        android:id="@+id/searchET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Search by Keyword"
+        android:layout_weight="2"/>
+<!--
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ico_mic"
+        android:layout_height="match_parent" />
+-->
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:paddingTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".5"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/numberofProductsTV"
+        android:layout_width="0dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7"
+    android:orientation="vertical"
+    >
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="500dp"-->
+        <!--android:scrollbarStyle="insideOverlay"-->
+        <!--android:id="@+id/productLV"-->
+        <!-->-->
+
+    <!--</ListView>-->
+
+    <ListView
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/productLV"
+        />
+
+
+</LinearLayout>
+
+</LinearLayout>
